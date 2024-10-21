@@ -1,0 +1,61 @@
+/* Alert.css */
+.alert-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000; /* Ensure the alert is above other components */
+}
+
+.alert {
+  padding: 1.25rem 1.5rem;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+  height: auto;
+  width: 120%;
+  max-width: 500px;
+  font-size: 1.1rem;
+  gap: 1rem;
+  /* box-shadow: 1px 1px 4px 4px rgba(0, 0, 0, 0.3); */
+}
+
+.attendance-code {
+  font-size: 20px;
+  color: black;
+}
+
+.success {
+  background-color: #fff;
+  color: #28a745;
+  border: 1px solid #28a745;
+  box-shadow: 2px 2px 6px 2px rgba(40, 167, 69, 0.2),
+    -2px -2px 6px 2px rgba(40, 167, 69, 0.2);
+}
+
+.failure {
+  background-color: #fff;
+  color: #dc3545;
+  border: 1px solid #dc3545;
+  box-shadow: 2px 2px 6px 2px rgba(220, 53, 70, 0.2),
+    -2px -2px 6px 2px rgba(220, 53, 70, 0.2);
+}
+
+.close-button {
+  cursor: pointer;
+  font-size: 18px;
+  padding: 0.25rem 1.5rem;
+  color: #fff;
+  border-radius: 8px;
+}
+
+.close-button.success {
+  background-color: #28a745;
+}
+.close-button.failure {
+  background-color: #dc3545;
+}
